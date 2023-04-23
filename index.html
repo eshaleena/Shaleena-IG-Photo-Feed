@@ -1,91 +1,612 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <nav class="navbar navbar-light bg-light">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="https://www.pngitem.com/pimgs/m/595-5957085_instagram-logo-and-name-hd-png-download.png" alt="Test" height="60" width="140" /" alt="" width="30" height="24">
-          </a>
-        </div>
-        <div>
-            <!-- Button trigger modal -->
-<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Create a new post
-  </button>
 
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <div><h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1></div>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-         Add the caption of your post
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Website</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
 
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-success">Publish</button>
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="https://www.pngitem.com/pimgs/m/595-5957085_instagram-logo-and-name-hd-png-download.png" alt="Test"
+          height="60" width="140" /" alt="" width="30" height="24">
+      </a>
+    </div>
+    <div>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Create a new post
+      </button>
 
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+              </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Add the caption of your post
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success">Publish</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="btn-group">
+      <button class="btn btn-secondary btn-sm dropdown-toggle btn-sm" type="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear"
+          viewBox="0 0 16 16">
+          <path
+            d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
+          <path
+            d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
+        </svg>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Profile</a></li>
+        <li><a class="dropdown-item" href="#">Accesibilty</a></li>
+        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item text-decoration-red" href="#">Log out</a></li>
+      </ul>
+    </div>
+    </div>
+    </div>
+    </div>
+  </nav>
+
+  <nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
+        role="tab" aria-controls="nav-home" aria-selected="true">Tab</button>
+      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button"
+        role="tab" aria-controls="nav-profile" aria-selected="false">Grid</button>
+    </div>
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-7">
+            <section class="story-container"></section>
+            <section class="newsfeed my-5">
+              <div class="post">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="container">
+                      <!-- Author -->
+                      <div class="row">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Photo -->
+                  <h4>My crazy dog Spark</h4>
+                  <div class="col-md-8">
+                    <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-mdb-ripple-color="light">
+                      <img
+                        src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L25zODIzMC1pbWFnZS5qcGc.jpg"
+                        class="w-100" alt="Louvre" />
+                      <a href="#!">
+                        <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+                      </a>
+                    </div>
+                  </div>
+                 <!--interactions-->
+                <div class="card-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-8 mt-1">
+                     <small>Liked by<strong>4GeeksAcademy</strong> and <strong>500,678</strong> others </small>
+                      </div>
+                      <!--Description-->
+                      <div class="row">
+                        <div class="col-md-12 mt-1">
+                          <p>
+                            <strong class="text-dark"></strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore iusto dolore incidunt autem saepe perferendis velit voluptates enim nulla minus vel, a modi similique fugit quod excepturi tenetur repellat! Necessitatibus?
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  </div>
+                </div>
+
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-7">
+          <section class="story-container"></section>
+          <section class="newsfeed my-5">
+            <div class="post">
+              <div class="card">
+                <div class="card-body">
+                  <div class="container">
+                    <!-- Author -->
+                    <div class="row">
+                    </div>
+                  </div>
+                </div>
+                <!-- Photo -->
+                <h4>I went on vacation it was beautiful!</h4>
+                <div class="col-md-8">
+                  <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-mdb-ripple-color="light">
+                    <img
+                      src="https://www.rd.com/wp-content/uploads/2019/10/clear-water_beaches-scaled-e1643061503702.jpg?fit=700,467"
+                      class="w-100" alt="Louvre" />
+                    <a href="#!">
+                      <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+                    </a>
+                  </div>
+                </div>
+               <!--interactions-->
+              <div class="card-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-8 mt-1">
+                   <small>Liked by<strong>4GeeksAcademy</strong> and <strong>500,678</strong> others </small>
+                    </div>
+                    <!--Description-->
+                    <div class="row">
+                      <div class="col-md-12 mt-1">
+                        <p>
+                          <strong class="text-dark"></strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore iusto dolore incidunt autem saepe perferendis velit voluptates enim nulla minus vel, a modi similique fugit quod excepturi tenetur repellat! Necessitatibus?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                </div>
+              </div>
+
+            </div>
         </div>
       </div>
     </div>
   </div>
+  </section>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-        </div>
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-7">
+        <section class="story-container"></section>
+        <section class="newsfeed my-5">
+          <div class="post">
+            <div class="card">
+              <div class="card-body">
+                <div class="container">
+                  <!-- Author -->
+                  <div class="row">
+                  </div>
+                </div>
+              </div>
+              <!-- Photo -->
+              <h4>My classmates are so fun to be around</h4>
+              <div class="col-md-8">
+                <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-mdb-ripple-color="light">
+                  <img
+                    src="https://media.istockphoto.com/id/1357500799/photo/young-group-of-people-smiling-on-camera-having-fun-outdoor-in-the-city-focus-on-african-girl.jpg?b=1&s=170667a&w=0&k=20&c=J_thFKMLwqjf1Ut5Zu-HIXNeXJlalGp2Y3r6QbsaxUc="
+                    class="w-100" alt="Louvre" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+                  </a>
+                </div>
+              </div>
+             <!--interactions-->
+            <div class="card-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8 mt-1">
+                 <small>Liked by<strong>4GeeksAcademy</strong> and <strong>500,678</strong> others </small>
+                  </div>
+                  <!--Description-->
+                  <div class="row">
+                    <div class="col-md-12 mt-1">
+                      <p>
+                        <strong class="text-dark"></strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore iusto dolore incidunt autem saepe perferendis velit voluptates enim nulla minus vel, a modi similique fugit quod excepturi tenetur repellat! Necessitatibus?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              </div>
+            </div>
+
+          </div>
       </div>
-      <div class="btn-group">
-        <button class="btn btn-secondary btn-sm dropdown-toggle btn-sm" type="button"
-            data-bs-toggle="dropdown" aria-expanded="false">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-gear" viewBox="0 0 16 16">
-                <path
-                    d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
-                <path
-                    d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
-            </svg>
-        </button>
-        <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Profile</a></li>
-            <li><a class="dropdown-item" href="#">Accesibilty</a></li>
-            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-            <li>
-                <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item text-decoration-red" href="#">Log out 1</a></li>
-        </ul> 
     </div>
   </div>
+</div>
+</section>
+
+<div class="container my-5">
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-7">
+      <section class="story-container"></section>
+      <section class="newsfeed my-5">
+        <div class="post">
+          <div class="card">
+            <div class="card-body">
+              <div class="container">
+                <!-- Author -->
+                <div class="row">
+                </div>
+              </div>
+            </div>
+            <!-- Photo -->
+            <h4>My favorite meal in the morning is pancakes</h4>
+            <div class="col-md-8">
+              <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-mdb-ripple-color="light">
+                <img
+                  src="https://media.istockphoto.com/id/1161996776/photo/stack-of-pancakes-with-maple-syrup-and-fresh-blueberries.jpg?b=1&s=170667a&w=0&k=20&c=Q6BDtDtY5rTNWkiGQydVctdafv2rZh3V2MWL8UmDR04="
+                  class="w-100" alt="Louvre" />
+                <a href="#!">
+                  <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+                </a>
+              </div>
+            </div>
+           <!--interactions-->
+          <div class="card-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 mt-1">
+               <small>Liked by<strong>4GeeksAcademy</strong> and <strong>500,678</strong> others </small>
+                </div>
+                <!--Description-->
+                <div class="row">
+                  <div class="col-md-12 mt-1">
+                    <p>
+                      <strong class="text-dark"></strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore iusto dolore incidunt autem saepe perferendis velit voluptates enim nulla minus vel, a modi similique fugit quod excepturi tenetur repellat! Necessitatibus?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            </div>
+          </div>
+
         </div>
-        
+    </div>
+  </div>
+</div>
+</div>
+</section>
 
-      </nav>
+<div class="container my-5">
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-7">
+      <section class="story-container"></section>
+      <section class="newsfeed my-5">
+        <div class="post">
+          <div class="card">
+            <div class="card-body">
+              <div class="container">
+                <!-- Author -->
+                <div class="row">
+                </div>
+              </div>
+            </div>
+            <!-- Photo -->
+            <h4>My epic experience in paris</h4>
+            <div class="col-md-8">
+              <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-mdb-ripple-color="light">
+                <img
+                  src="https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg?cs=srgb&dl=pexels-thorsten-technoman-338515.jpg&fm=jpg"
+                  class="w-100" alt="Louvre" />
+                <a href="#!">
+                  <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+                </a>
+              </div>
+            </div>
+           <!--interactions-->
+          <div class="card-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 mt-1">
+               <small>Liked by<strong>4GeeksAcademy</strong> and <strong>500,678</strong> others </small>
+                </div>
+                <!--Description-->
+                <div class="row">
+                  <div class="col-md-12 mt-1">
+                    <p>
+                      <strong class="text-dark"></strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore iusto dolore incidunt autem saepe perferendis velit voluptates enim nulla minus vel, a modi similique fugit quod excepturi tenetur repellat! Necessitatibus?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+<div class="container my-5">
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-7">
+      <section class="story-container"></section>
+      <section class="newsfeed my-5">
+        <div class="post">
+          <div class="card">
+            <div class="card-body">
+              <div class="container">
+                <!-- Author -->
+                <div class="row">
+                </div>
+              </div>
+            </div>
+            <!-- Photo -->
+            <h4>My favorite soccer team is the Dodgers!</h4>
+            <div class="col-md-8">
+              <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-mdb-ripple-color="light">
+                <img
+                  src="https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1024-512,f_auto,q_auto:best/newscms/2020_01/3171161/200104-us-mens-national-soccer-team-al-1020.jpg"
+                  class="w-100" alt="Louvre" />
+                <a href="#!">
+                  <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+                </a>
+              </div>
+            </div>
+           <!--interactions-->
+          <div class="card-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 mt-1">
+               <small>Liked by<strong>4GeeksAcademy</strong> and <strong>500,678</strong> others </small>
+                </div>
+                <!--Description-->
+                <div class="row">
+                  <div class="col-md-12 mt-1">
+                    <p>
+                      <strong class="text-dark"></strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore iusto dolore incidunt autem saepe perferendis velit voluptates enim nulla minus vel, a modi similique fugit quod excepturi tenetur repellat! Necessitatibus?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+<div class="container my-5">
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-7">
+      <section class="story-container"></section>
+      <section class="newsfeed my-5">
+        <div class="post">
+          <div class="card">
+            <div class="card-body">
+              <div class="container">
+                <!-- Author -->
+                <div class="row">
+                </div>
+              </div>
+            </div>
+            <!-- Photo -->
+            <h4>I love coding with the 4Geeks Academy #BreatheCode</h4>
+            <div class="col-md-8">
+              <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-mdb-ripple-color="light">
+                <img
+                  src="https://media.istockphoto.com/id/1224500457/photo/programming-code-abstract-technology-background-of-software-developer-and-computer-script.jpg?s=612x612&w=0&k=20&c=nHMypkMTU1HUUW85Zt0Ff7MDbq17n0eVeXaoM9Knt4Q="
+                  class="w-100" alt="Louvre" />
+                <a href="#!">
+                  <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+                </a>
+              </div>
+            </div>
+           <!--interactions-->
+          <div class="card-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 mt-1">
+               <small>Liked by<strong>4GeeksAcademy</strong> and <strong>500,678</strong> others </small>
+                </div>
+                <!--Description-->
+                <div class="row">
+                  <div class="col-md-12 mt-1">
+                    <p>
+                      <strong class="text-dark"></strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore iusto dolore incidunt autem saepe perferendis velit voluptates enim nulla minus vel, a modi similique fugit quod excepturi tenetur repellat! Necessitatibus?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+<div class="container my-5">
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-7">
+      <section class="story-container"></section>
+      <section class="newsfeed my-5">
+        <div class="post">
+          <div class="card">
+            <div class="card-body">
+              <div class="container">
+                <!-- Author -->
+                <div class="row">
+                </div>
+              </div>
+            </div>
+            <!-- Photo -->
+            <h4>Curls for the girls! Black girl magic like no other</h4>
+            <div class="col-md-8">
+              <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-mdb-ripple-color="light">
+                <img
+                  src="https://media.istockphoto.com/id/1148043788/photo/beautiful-smiling-girl-with-curly-hairstyle.jpg?s=612x612&w=0&k=20&c=Eg-v_LF7s27bv2Ub4UYABob71gaYn0CWSt5SU0IGfn0="
+                  class="w-100" alt="Louvre" />
+                <a href="#!">
+                  <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+                </a>
+              </div>
+            </div>
+           <!--interactions-->
+          <div class="card-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 mt-1">
+               <small>Liked by<strong>4GeeksAcademy</strong> and <strong>500,678</strong> others </small>
+                </div>
+                <!--Description-->
+                <div class="row">
+                  <div class="col-md-12 mt-1">
+                    <p>
+                      <strong class="text-dark"></strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore iusto dolore incidunt autem saepe perferendis velit voluptates enim nulla minus vel, a modi similique fugit quod excepturi tenetur repellat! Necessitatibus?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+<div class="container my-5">
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-7">
+      <section class="story-container"></section>
+      <section class="newsfeed my-5">
+        <div class="post">
+          <div class="card">
+            <div class="card-body">
+              <div class="container">
+                <!-- Author -->
+                <div class="row">
+                </div>
+              </div>
+            </div>
+            <!-- Photo -->
+            <h4>Me all day everyday while I'm in coding from home</h4>
+            <div class="col-md-8">
+              <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-mdb-ripple-color="light">
+                <img
+                  src="https://postsecondaryreadiness.org/wp-content/uploads/2019/09/cal-state-math-1-669x272.png"
+                  class="w-100" alt="Louvre" />
+                <a href="#!">
+                  <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+                </a>
+              </div>
+            </div>
+           <!--interactions-->
+          <div class="card-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 mt-1">
+               <small>Liked by<strong>4GeeksAcademy</strong> and <strong>500,678</strong> others </small>
+                </div>
+                <!--Description-->
+                <div class="row">
+                  <div class="col-md-12 mt-1">
+                    <p>
+                      <strong class="text-dark"></strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore iusto dolore incidunt autem saepe perferendis velit voluptates enim nulla minus vel, a modi similique fugit quod excepturi tenetur repellat! Necessitatibus?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+    <header>
+    </header>
+    <section class="instagram-wrap">
+    </section>
 
 
 
@@ -93,7 +614,9 @@
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
+</body>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-  </body>
 </html>
